@@ -1,8 +1,10 @@
-#include std
 
-class Sort()
+#include <tclap/CmdLine.h>
+
+
+class Sort
 {
-    
+
     private:
         std::vector<float> to_sort_;
         
@@ -15,4 +17,14 @@ class Sort()
 
 
 
-}
+};
+
+class QuickSort: public Sort
+{
+
+};
+
+class BubbleSort: public Sort
+{
+    
+};

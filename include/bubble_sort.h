@@ -1,4 +1,0 @@
-class BubbleSort: public Sort
-{
-    
-};
