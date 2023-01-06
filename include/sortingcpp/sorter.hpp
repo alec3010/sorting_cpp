@@ -7,11 +7,17 @@ namespace sorter
         {   
         private:
             std::string str_to_sort_;
+            std::string algorithm_choice_;
                 
 
         public:
-            Sorter(std::string numbers, std::string algorithm);
+            Sorter();
             void setStringToSort(std::string);
+            void setAlgo(std::string);
+            std::string getStringToSort();
+            std::string getAlgo();
+
+            void parseCommands(int, char**);
 
 
         };
