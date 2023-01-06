@@ -1,0 +1,3 @@
+add_executable(SortingApp sorting_app.cpp)
+target_compile_features(SortingApp PRIVATE cxx_std_11)
+target_link_libraries(SortingApp PRIVATE Sorter Sort)
