@@ -1,6 +1,5 @@
-
-#include <tclap/CmdLine.h>
-
+namespace sort
+{
 
 class Sort
 {
@@ -10,10 +9,9 @@ class Sort
         
     public:
         
-        
         void setVectorToSort(std::vector<float>);
-
-        std::vector<float> sort(std::vector<float>);
+        std::vector getVectorToSort()
+        void sort();
 
 
 
@@ -21,10 +19,12 @@ class Sort
 
 class QuickSort: public Sort
 {
-
+    
 };
 
 class BubbleSort: public Sort
 {
     
 };
+
+}
