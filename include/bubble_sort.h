@@ -1,4 +1,4 @@
-class BubbleSorter
+class BubbleSort: public Sort
 {
     
-}
+};

@@ -1,0 +1,4 @@
+class QuickSort: public Sort
+{
+
+};
