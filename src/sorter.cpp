@@ -35,6 +35,11 @@ void Sorter::parseCommands(int argc, char** argv)
     std::cout << "Will use the " << getAlgo() << " Algorithm!" << std::endl;
 }
 
+void Sorter::covertToFloatVector()
+{
+    
+}
+
 void Sorter::setStringToSort(std::string number_string)
 {
     str_to_sort_ = number_string;
