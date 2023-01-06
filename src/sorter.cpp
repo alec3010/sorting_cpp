@@ -3,8 +3,11 @@
 namespace sorter
 {
 
-Sorter::Sorter()
+Sorter::Sorter(int argc, char** argv)
 {
+    parseCommands(argc, argv);
+    convertToFloatVector();
+    
     
 }
 
@@ -35,9 +38,15 @@ void Sorter::parseCommands(int argc, char** argv)
     std::cout << "Will use the " << getAlgo() << " Algorithm!" << std::endl;
 }
 
-void Sorter::covertToFloatVector()
+void Sorter::convertToFloatVector()
 {
-    
+    std::vector<std::string> strs;
+    boost::split(strs, str_to_sort_, boost::is_any_of(" "));
+    //std::cout << strs << std::endl; 
+    for (auto it = begin (strs); it != end(strs); it++)
+    {
+        floats_to_sort_.push_back(std::stof(*it));
+    }
 }
 
 void Sorter::setStringToSort(std::string number_string)
