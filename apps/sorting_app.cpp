@@ -6,6 +6,6 @@
 
 int main(int argc, char** argv)
 {
-    sorter::Sorter sorter;
-    sorter.parseCommands(argc, argv);
+    sorter::Sorter sorter(argc, argv);
+    
 }
