@@ -1,3 +1,5 @@
+#include <boost/algorithm/string.hpp>
+#include <tclap/CmdLine.h>
 #include "sortingcpp/sort.hpp"
 
 namespace sorter
@@ -12,9 +14,10 @@ namespace sorter
                 
 
         public:
-            Sorter();
+            Sorter(int, char**);
             void parseCommands(int, char**);
-            void covertToFloatVector();
+            void convertToFloatVector();
+            void selectAlgo(std::string);
 
             void setStringToSort(std::string);
             std::string getStringToSort();
